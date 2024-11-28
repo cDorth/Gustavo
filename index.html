@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titulo">
+        <h1>JOGOS SIMPLES EM JAVASCRIPT</h1>
+    </div>
+
+<section class="botoes">
+    <div class="direita">
+        <button id="advinhacao">Jogo da advinhação</button>
+        <script src="advinhacao.js"></script>
+
+        <button id="bissexto">Verificador de Ano Bissexto</button>
+            <script src="bissexto.js"></script>
+    </div>
+
+    <div class="esquerda">
+        <button id="media">Verificador de média escolar</button>
+            <script src="media.js"></script>
+        
+        <button id="gorjeta">Calculadora de Gorjeta</button>
+            <script src="gorjeta.js"></script>
+    </div>
+</section>
+<button id="boasmaneiras">Boas Maneiras</button>
+<script src="boasmaneiras.js"></script>
+<button id="toggleMode">Alternar Tema</button>
+<script>
+    const toggleMode = document.getElementById("toggleMode");
+
+    toggleMode.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+        document.body.classList.toggle("light");
+});
+</script>
+</body>
+</html>
