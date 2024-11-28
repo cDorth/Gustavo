@@ -6,10 +6,10 @@
     <title>Jogo de Adivinhação</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="titulo">
-        <h1>JOGOS SIMPLES EM JAVASCRIPT</h1>
-    </div>
+<body class="light">
+
+    <h1 id="titulo">JOGOS SIMPLES EM JAVASCRIPT</h1>
+
 
 <section class="botoes">
     <div class="direita">
@@ -37,7 +37,13 @@
     toggleMode.addEventListener("click", () => {
         document.body.classList.toggle("dark");
         document.body.classList.toggle("light");
-});
+
+        const header = document.querySelector("h1"); // Seleciona o primeiro h1 na página
+        if (header) {
+            header.classList.toggle("dark");
+            header.classList.toggle("light");
+        }
+    });
 </script>
 </body>
 </html>
